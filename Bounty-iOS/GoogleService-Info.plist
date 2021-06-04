@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>386811981272-t7lb6cct1nbf2e40kio9tso9n6b316ok.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.386811981272-t7lb6cct1nbf2e40kio9tso9n6b316ok</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDgxWdFaEK_sSKaOGbea3c2MagI-s-RxZg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>386811981272</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alleywaytime.Bounty-iOS</string>
+	<key>PROJECT_ID</key>
+	<string>bounty-eb852</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bounty-eb852.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:386811981272:ios:cf35c960bd1772b4c4d6ad</string>
+</dict>
+</plist>
