@@ -7,44 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8003BD80C5DF542427ED4C48 /* Pods_Bounty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C16EAC14302F9FCBC2BB31D /* Pods_Bounty_iOS.framework */; };
+		B20BB99B266C0CE3006251C4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20BB99A266C0CE3006251C4 /* Profile.swift */; };
+		B20BB99D266C0D7B006251C4 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20BB99C266C0D7B006251C4 /* Project.swift */; };
+		B20BB9A4266C453C006251C4 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = B20BB9A3266C453C006251C4 /* SkeletonView */; };
 		B22E4A242669A976009CAE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A232669A976009CAE36 /* AppDelegate.swift */; };
 		B22E4A262669A976009CAE36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A252669A976009CAE36 /* SceneDelegate.swift */; };
 		B22E4A282669A976009CAE36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A272669A976009CAE36 /* ViewController.swift */; };
 		B22E4A2B2669A976009CAE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22E4A292669A976009CAE36 /* Main.storyboard */; };
 		B22E4A302669A977009CAE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22E4A2F2669A977009CAE36 /* Assets.xcassets */; };
 		B22E4A332669A977009CAE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22E4A312669A977009CAE36 /* LaunchScreen.storyboard */; };
-		B22E4A3E2669A977009CAE36 /* Bounty_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A3D2669A977009CAE36 /* Bounty_iOSTests.swift */; };
-		B22E4A492669A977009CAE36 /* Bounty_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A482669A977009CAE36 /* Bounty_iOSUITests.swift */; };
 		B22E4A572669AD18009CAE36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B22E4A562669AD18009CAE36 /* GoogleService-Info.plist */; };
-		B22E4A6D2669B712009CAE36 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A6C2669B712009CAE36 /* FirebaseFirestore */; };
-		B22E4A6F2669B712009CAE36 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A6E2669B712009CAE36 /* FirebaseInstallations */; };
-		B22E4A712669B712009CAE36 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A702669B712009CAE36 /* FirebaseAppCheck */; };
-		B22E4A732669B712009CAE36 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A722669B712009CAE36 /* FirebaseStorage */; };
-		B22E4A752669B712009CAE36 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A742669B712009CAE36 /* FirebaseMessaging */; };
-		B22E4A772669B712009CAE36 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A762669B712009CAE36 /* FirebaseMLModelDownloader */; };
-		B22E4A792669B712009CAE36 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A782669B712009CAE36 /* FirebaseAuth */; };
-		B22E4A7B2669B712009CAE36 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B22E4A7A2669B712009CAE36 /* FirebaseRemoteConfig */; };
 		B22E4A802669CCB7009CAE36 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A7F2669CCB7009CAE36 /* FirebaseManager.swift */; };
+		B259E6B1266D516800F112E7 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = B259E6B0266D516800F112E7 /* Eureka */; };
+		B259E6B3266D51B300F112E7 /* ProfileFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */; };
+		B2A6501C266A7DEF007664D5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2A6501B266A7DEF007664D5 /* .swiftlint.yml */; };
+		B2B11884266A977E005D7011 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B11883266A977E005D7011 /* ProfileTableViewController.swift */; };
+		B2B11887266ADBE5005D7011 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B2B11886266ADBE5005D7011 /* Kingfisher */; };
+		B2B1188A266AE2A4005D7011 /* SPPermissionsNotification in Frameworks */ = {isa = PBXBuildFile; productRef = B2B11889266AE2A4005D7011 /* SPPermissionsNotification */; };
+		B2B1188C266AE2A4005D7011 /* SPPermissionsCamera in Frameworks */ = {isa = PBXBuildFile; productRef = B2B1188B266AE2A4005D7011 /* SPPermissionsCamera */; };
+		B2B1188E266AE2A4005D7011 /* SPPermissionsPhotoLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = B2B1188D266AE2A4005D7011 /* SPPermissionsPhotoLibrary */; };
+		B2DA6522266A844B00A122C4 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA6521266A844B00A122C4 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B22E4A3A2669A977009CAE36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B22E4A182669A976009CAE36 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B22E4A1F2669A976009CAE36;
-			remoteInfo = "Bounty-iOS";
-		};
-		B22E4A452669A977009CAE36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B22E4A182669A976009CAE36 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B22E4A1F2669A976009CAE36;
-			remoteInfo = "Bounty-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		2D51D8412D6CF5332C5E6F68 /* Pods-Bounty-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bounty-iOS.release.xcconfig"; path = "Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9C16EAC14302F9FCBC2BB31D /* Pods_Bounty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bounty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20BB99A266C0CE3006251C4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B20BB99C266C0D7B006251C4 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		B22E4A202669A976009CAE36 /* Bounty-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bounty-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22E4A232669A976009CAE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B22E4A252669A976009CAE36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,15 +43,14 @@
 		B22E4A2F2669A977009CAE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B22E4A322669A977009CAE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B22E4A342669A977009CAE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B22E4A392669A977009CAE36 /* Bounty-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bounty-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22E4A3D2669A977009CAE36 /* Bounty_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounty_iOSTests.swift; sourceTree = "<group>"; };
-		B22E4A3F2669A977009CAE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B22E4A442669A977009CAE36 /* Bounty-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bounty-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22E4A482669A977009CAE36 /* Bounty_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounty_iOSUITests.swift; sourceTree = "<group>"; };
-		B22E4A4A2669A977009CAE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22E4A562669AD18009CAE36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B22E4A7E2669C669009CAE36 /* Bounty-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bounty-iOS.entitlements"; sourceTree = "<group>"; };
 		B22E4A7F2669CCB7009CAE36 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFormViewController.swift; sourceTree = "<group>"; };
+		B2A6501B266A7DEF007664D5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B2B11883266A977E005D7011 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		B2DA6521266A844B00A122C4 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F442F8AC3E0344ECC1A9B571 /* Pods-Bounty-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bounty-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,41 +58,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22E4A6D2669B712009CAE36 /* FirebaseFirestore in Frameworks */,
-				B22E4A732669B712009CAE36 /* FirebaseStorage in Frameworks */,
-				B22E4A752669B712009CAE36 /* FirebaseMessaging in Frameworks */,
-				B22E4A772669B712009CAE36 /* FirebaseMLModelDownloader in Frameworks */,
-				B22E4A712669B712009CAE36 /* FirebaseAppCheck in Frameworks */,
-				B22E4A792669B712009CAE36 /* FirebaseAuth in Frameworks */,
-				B22E4A6F2669B712009CAE36 /* FirebaseInstallations in Frameworks */,
-				B22E4A7B2669B712009CAE36 /* FirebaseRemoteConfig in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B22E4A362669A977009CAE36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B22E4A412669A977009CAE36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B2B1188E266AE2A4005D7011 /* SPPermissionsPhotoLibrary in Frameworks */,
+				B2B11887266ADBE5005D7011 /* Kingfisher in Frameworks */,
+				B2B1188A266AE2A4005D7011 /* SPPermissionsNotification in Frameworks */,
+				8003BD80C5DF542427ED4C48 /* Pods_Bounty_iOS.framework in Frameworks */,
+				B20BB9A4266C453C006251C4 /* SkeletonView in Frameworks */,
+				B259E6B1266D516800F112E7 /* Eureka in Frameworks */,
+				B2B1188C266AE2A4005D7011 /* SPPermissionsCamera in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641BD30F37C682C21F164006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F442F8AC3E0344ECC1A9B571 /* Pods-Bounty-iOS.debug.xcconfig */,
+				2D51D8412D6CF5332C5E6F68 /* Pods-Bounty-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B20BB99F266C19E8006251C4 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		B22E4A172669A976009CAE36 = {
 			isa = PBXGroup;
 			children = (
 				B22E4A222669A976009CAE36 /* Bounty-iOS */,
-				B22E4A3C2669A977009CAE36 /* Bounty-iOSTests */,
-				B22E4A472669A977009CAE36 /* Bounty-iOSUITests */,
+				B2A65017266A7758007664D5 /* Objects */,
+				B20BB99F266C19E8006251C4 /* Graphics */,
 				B22E4A212669A976009CAE36 /* Products */,
+				641BD30F37C682C21F164006 /* Pods */,
+				C7BE431D8339DD5EF959A8DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				B22E4A202669A976009CAE36 /* Bounty-iOS.app */,
-				B22E4A392669A977009CAE36 /* Bounty-iOSTests.xctest */,
-				B22E4A442669A977009CAE36 /* Bounty-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,33 +113,44 @@
 				B22E4A7E2669C669009CAE36 /* Bounty-iOS.entitlements */,
 				B22E4A232669A976009CAE36 /* AppDelegate.swift */,
 				B22E4A252669A976009CAE36 /* SceneDelegate.swift */,
-				B22E4A272669A976009CAE36 /* ViewController.swift */,
+				B2B11882266A975F005D7011 /* ViewControllers */,
+				B2DA6521266A844B00A122C4 /* AuthenticationService.swift */,
 				B22E4A7F2669CCB7009CAE36 /* FirebaseManager.swift */,
 				B22E4A292669A976009CAE36 /* Main.storyboard */,
 				B22E4A2F2669A977009CAE36 /* Assets.xcassets */,
 				B22E4A312669A977009CAE36 /* LaunchScreen.storyboard */,
 				B22E4A342669A977009CAE36 /* Info.plist */,
 				B22E4A562669AD18009CAE36 /* GoogleService-Info.plist */,
+				B2A6501B266A7DEF007664D5 /* .swiftlint.yml */,
 			);
 			path = "Bounty-iOS";
 			sourceTree = "<group>";
 		};
-		B22E4A3C2669A977009CAE36 /* Bounty-iOSTests */ = {
+		B2A65017266A7758007664D5 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				B22E4A3D2669A977009CAE36 /* Bounty_iOSTests.swift */,
-				B22E4A3F2669A977009CAE36 /* Info.plist */,
+				B20BB99A266C0CE3006251C4 /* Profile.swift */,
+				B20BB99C266C0D7B006251C4 /* Project.swift */,
 			);
-			path = "Bounty-iOSTests";
+			path = Objects;
 			sourceTree = "<group>";
 		};
-		B22E4A472669A977009CAE36 /* Bounty-iOSUITests */ = {
+		B2B11882266A975F005D7011 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B22E4A482669A977009CAE36 /* Bounty_iOSUITests.swift */,
-				B22E4A4A2669A977009CAE36 /* Info.plist */,
+				B22E4A272669A976009CAE36 /* ViewController.swift */,
+				B2B11883266A977E005D7011 /* ProfileTableViewController.swift */,
+				B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */,
 			);
-			path = "Bounty-iOSUITests";
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C7BE431D8339DD5EF959A8DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C16EAC14302F9FCBC2BB31D /* Pods_Bounty_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B22E4A4D2669A977009CAE36 /* Build configuration list for PBXNativeTarget "Bounty-iOS" */;
 			buildPhases = (
+				72BEEB5FBCCC1CFED97683A0 /* [CP] Check Pods Manifest.lock */,
 				B22E4A1C2669A976009CAE36 /* Sources */,
 				B22E4A1D2669A976009CAE36 /* Frameworks */,
 				B22E4A1E2669A976009CAE36 /* Resources */,
+				8990E957A4485B5602B4375A /* [CP] Embed Pods Frameworks */,
+				EA66ACE0EFC8C476B35C4BBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,54 +173,16 @@
 			);
 			name = "Bounty-iOS";
 			packageProductDependencies = (
-				B22E4A6C2669B712009CAE36 /* FirebaseFirestore */,
-				B22E4A6E2669B712009CAE36 /* FirebaseInstallations */,
-				B22E4A702669B712009CAE36 /* FirebaseAppCheck */,
-				B22E4A722669B712009CAE36 /* FirebaseStorage */,
-				B22E4A742669B712009CAE36 /* FirebaseMessaging */,
-				B22E4A762669B712009CAE36 /* FirebaseMLModelDownloader */,
-				B22E4A782669B712009CAE36 /* FirebaseAuth */,
-				B22E4A7A2669B712009CAE36 /* FirebaseRemoteConfig */,
+				B2B11886266ADBE5005D7011 /* Kingfisher */,
+				B2B11889266AE2A4005D7011 /* SPPermissionsNotification */,
+				B2B1188B266AE2A4005D7011 /* SPPermissionsCamera */,
+				B2B1188D266AE2A4005D7011 /* SPPermissionsPhotoLibrary */,
+				B20BB9A3266C453C006251C4 /* SkeletonView */,
+				B259E6B0266D516800F112E7 /* Eureka */,
 			);
 			productName = "Bounty-iOS";
 			productReference = B22E4A202669A976009CAE36 /* Bounty-iOS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B22E4A382669A977009CAE36 /* Bounty-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B22E4A502669A977009CAE36 /* Build configuration list for PBXNativeTarget "Bounty-iOSTests" */;
-			buildPhases = (
-				B22E4A352669A977009CAE36 /* Sources */,
-				B22E4A362669A977009CAE36 /* Frameworks */,
-				B22E4A372669A977009CAE36 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B22E4A3B2669A977009CAE36 /* PBXTargetDependency */,
-			);
-			name = "Bounty-iOSTests";
-			productName = "Bounty-iOSTests";
-			productReference = B22E4A392669A977009CAE36 /* Bounty-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B22E4A432669A977009CAE36 /* Bounty-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B22E4A532669A977009CAE36 /* Build configuration list for PBXNativeTarget "Bounty-iOSUITests" */;
-			buildPhases = (
-				B22E4A402669A977009CAE36 /* Sources */,
-				B22E4A412669A977009CAE36 /* Frameworks */,
-				B22E4A422669A977009CAE36 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B22E4A462669A977009CAE36 /* PBXTargetDependency */,
-			);
-			name = "Bounty-iOSUITests";
-			productName = "Bounty-iOSUITests";
-			productReference = B22E4A442669A977009CAE36 /* Bounty-iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -230,14 +196,6 @@
 					B22E4A1F2669A976009CAE36 = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					B22E4A382669A977009CAE36 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B22E4A1F2669A976009CAE36;
-					};
-					B22E4A432669A977009CAE36 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B22E4A1F2669A976009CAE36;
-					};
 				};
 			};
 			buildConfigurationList = B22E4A1B2669A976009CAE36 /* Build configuration list for PBXProject "Bounty-iOS" */;
@@ -250,15 +208,16 @@
 			);
 			mainGroup = B22E4A172669A976009CAE36;
 			packageReferences = (
-				B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B2B11885266ADBE5005D7011 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B2B11888266AE2A3005D7011 /* XCRemoteSwiftPackageReference "SPPermissions" */,
+				B20BB9A2266C453C006251C4 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				B259E6AF266D516800F112E7 /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = B22E4A212669A976009CAE36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B22E4A1F2669A976009CAE36 /* Bounty-iOS */,
-				B22E4A382669A977009CAE36 /* Bounty-iOSTests */,
-				B22E4A432669A977009CAE36 /* Bounty-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6501C266A7DEF007664D5 /* .swiftlint.yml in Resources */,
 				B22E4A332669A977009CAE36 /* LaunchScreen.storyboard in Resources */,
 				B22E4A572669AD18009CAE36 /* GoogleService-Info.plist in Resources */,
 				B22E4A302669A977009CAE36 /* Assets.xcassets in Resources */,
@@ -275,64 +235,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B22E4A372669A977009CAE36 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B22E4A422669A977009CAE36 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72BEEB5FBCCC1CFED97683A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bounty-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8990E957A4485B5602B4375A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA66ACE0EFC8C476B35C4BBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bounty-iOS/Pods-Bounty-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B22E4A1C2669A976009CAE36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B11884266A977E005D7011 /* ProfileTableViewController.swift in Sources */,
 				B22E4A802669CCB7009CAE36 /* FirebaseManager.swift in Sources */,
+				B259E6B3266D51B300F112E7 /* ProfileFormViewController.swift in Sources */,
 				B22E4A282669A976009CAE36 /* ViewController.swift in Sources */,
+				B20BB99B266C0CE3006251C4 /* Profile.swift in Sources */,
 				B22E4A242669A976009CAE36 /* AppDelegate.swift in Sources */,
 				B22E4A262669A976009CAE36 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B22E4A352669A977009CAE36 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B22E4A3E2669A977009CAE36 /* Bounty_iOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B22E4A402669A977009CAE36 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B22E4A492669A977009CAE36 /* Bounty_iOSUITests.swift in Sources */,
+				B2DA6522266A844B00A122C4 /* AuthenticationService.swift in Sources */,
+				B20BB99D266C0D7B006251C4 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B22E4A3B2669A977009CAE36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B22E4A1F2669A976009CAE36 /* Bounty-iOS */;
-			targetProxy = B22E4A3A2669A977009CAE36 /* PBXContainerItemProxy */;
-		};
-		B22E4A462669A977009CAE36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B22E4A1F2669A976009CAE36 /* Bounty-iOS */;
-			targetProxy = B22E4A452669A977009CAE36 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B22E4A292669A976009CAE36 /* Main.storyboard */ = {
@@ -405,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -460,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -472,6 +453,7 @@
 		};
 		B22E4A4E2669A977009CAE36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F442F8AC3E0344ECC1A9B571 /* Pods-Bounty-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +474,7 @@
 		};
 		B22E4A4F2669A977009CAE36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D51D8412D6CF5332C5E6F68 /* Pods-Bounty-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,90 +490,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B22E4A512669A977009CAE36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C58CLY4K2U;
-				INFOPLIST_FILE = "Bounty-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alleywaytime.Bounty-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounty-iOS.app/Bounty-iOS";
-			};
-			name = Debug;
-		};
-		B22E4A522669A977009CAE36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C58CLY4K2U;
-				INFOPLIST_FILE = "Bounty-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alleywaytime.Bounty-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bounty-iOS.app/Bounty-iOS";
-			};
-			name = Release;
-		};
-		B22E4A542669A977009CAE36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C58CLY4K2U;
-				INFOPLIST_FILE = "Bounty-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alleywaytime.Bounty-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bounty-iOS";
-			};
-			name = Debug;
-		};
-		B22E4A552669A977009CAE36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C58CLY4K2U;
-				INFOPLIST_FILE = "Bounty-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alleywaytime.Bounty-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bounty-iOS";
 			};
 			name = Release;
 		};
@@ -615,77 +514,73 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B22E4A502669A977009CAE36 /* Build configuration list for PBXNativeTarget "Bounty-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B22E4A512669A977009CAE36 /* Debug */,
-				B22E4A522669A977009CAE36 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B22E4A532669A977009CAE36 /* Build configuration list for PBXNativeTarget "Bounty-iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B22E4A542669A977009CAE36 /* Debug */,
-				B22E4A552669A977009CAE36 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		B20BB9A2266C453C006251C4 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.1.0;
+				minimumVersion = 1.16.0;
+			};
+		};
+		B259E6AF266D516800F112E7 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.3;
+			};
+		};
+		B2B11885266ADBE5005D7011 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+		B2B11888266AE2A3005D7011 /* XCRemoteSwiftPackageReference "SPPermissions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPPermissions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B22E4A6C2669B712009CAE36 /* FirebaseFirestore */ = {
+		B20BB9A3266C453C006251C4 /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
+			package = B20BB9A2266C453C006251C4 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
-		B22E4A6E2669B712009CAE36 /* FirebaseInstallations */ = {
+		B259E6B0266D516800F112E7 /* Eureka */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseInstallations;
+			package = B259E6AF266D516800F112E7 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
-		B22E4A702669B712009CAE36 /* FirebaseAppCheck */ = {
+		B2B11886266ADBE5005D7011 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
+			package = B2B11885266ADBE5005D7011 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
-		B22E4A722669B712009CAE36 /* FirebaseStorage */ = {
+		B2B11889266AE2A4005D7011 /* SPPermissionsNotification */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
+			package = B2B11888266AE2A3005D7011 /* XCRemoteSwiftPackageReference "SPPermissions" */;
+			productName = SPPermissionsNotification;
 		};
-		B22E4A742669B712009CAE36 /* FirebaseMessaging */ = {
+		B2B1188B266AE2A4005D7011 /* SPPermissionsCamera */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
+			package = B2B11888266AE2A3005D7011 /* XCRemoteSwiftPackageReference "SPPermissions" */;
+			productName = SPPermissionsCamera;
 		};
-		B22E4A762669B712009CAE36 /* FirebaseMLModelDownloader */ = {
+		B2B1188D266AE2A4005D7011 /* SPPermissionsPhotoLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMLModelDownloader;
-		};
-		B22E4A782669B712009CAE36 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		B22E4A7A2669B712009CAE36 /* FirebaseRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B22E4A6B2669B712009CAE36 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfig;
+			package = B2B11888266AE2A3005D7011 /* XCRemoteSwiftPackageReference "SPPermissions" */;
+			productName = SPPermissionsPhotoLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -8,18 +8,56 @@
 import Foundation
 import Firebase
 
-class FirebaseManger {
+class FirebaseManager {
+
+    private let firestore = Firestore.firestore()
+    private let storage = Storage.storage()
     
-    private let db = Firestore.firestore()
-    
-    func getFirestore(_ collection: String) {
-        db.collection(collection).getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
+    func get(_ collection: String) {
+        firestore.collection(collection).getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                 }
+            }
+        }
+    }
+    
+    func uploadCurrentProfile(_ user: User) {
+        firestore.collection("users").document(user.uid).setData([
+            "username": user.displayName!,
+            "email": user.email!
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
+    
+    func saveCurrentProfile(_ profile: Profile, _ user: User, completionHandler: @escaping (_ error: Error?) -> Void) {
+        let request = user.createProfileChangeRequest()
+        request.displayName = profile.username
+        request.commitChanges { error in
+            if let error = error {
+                print(error)
+                completionHandler(error)
+            }
+        }
+        
+        firestore.collection("users").document(profile.uid).setData([
+            "pronoun": profile.pronoun!.rawValue,
+            "bio": profile.bio
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+                completionHandler(err)
+            } else {
+                print("Document successfully written!")
+                completionHandler(err)
             }
         }
     }
