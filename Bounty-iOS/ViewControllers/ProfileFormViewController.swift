@@ -24,13 +24,29 @@ class ProfileFormViewController: FormViewController {
     
     var delegate: ProfileFormVCDelegate! = nil
     
+    private var isValidated: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         form +++ Section("Basic Information")
             <<< TextRow("username") { row in
+                row.add(rule: RuleRequired())
+                row.add(rule: RuleMinLength(minLength: 4))
+                row.add(rule: RuleMaxLength(maxLength: 14))
+                row.validationOptions = .validatesOnChange
                 row.title = "Username"
                 row.placeholder = "Your new username"
                 row.value = currentUser!.displayName!
+            }
+            .cellUpdate { cell, row in
+                if !row.isValid {
+                    cell.titleLabel?.textColor = .systemRed
+                    self.isValidated = false
+                }
+                
+                if row.section?.form?.validate() == [] {
+                    self.isValidated = true
+                }
             }
             <<< ActionSheetRow<String>("pronoun") { row in
                 row.title = "Pronoun"
@@ -39,9 +55,20 @@ class ProfileFormViewController: FormViewController {
                 row.value = currentPronoun
             }
             <<< TextAreaRow("bio") { row in
-                row.title = "Bio"
+                row.add(rule: RuleMaxLength(maxLength: 45, msg: "Too long!"))
+                row.validationOptions = .validatesOnChange
                 row.placeholder = "Tell people something about yourself!"
                 row.value = currentBio
+            }
+            .cellUpdate { cell, row in
+                if !row.isValid {
+                    cell.textView?.textColor = .systemRed
+                    self.isValidated = false
+                }
+                
+                if row.section?.form?.validate() == [] {
+                    self.isValidated = true
+                }
             }
         
         // Enables the navigation accessory and stops navigation when a disabled row is encountered
@@ -53,6 +80,12 @@ class ProfileFormViewController: FormViewController {
     }
     
     @IBAction func savePressed(_ sender: Any) {
+        if isValidated {
+            save()
+        }
+    }
+    
+    private func save() {
         let valuesDictionary = form.values()
         
         currentProfile?.username = valuesDictionary["username"] as! String

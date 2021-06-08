@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -295,19 +296,63 @@
         <!--Bounties-->
         <scene sceneID="eCX-tZ-e0H">
             <objects>
-                <tableViewController id="d0O-sj-rkJ" sceneMemberID="viewController">
+                <tableViewController id="d0O-sj-rkJ" customClass="BountiesTableViewController" customModule="Bounty_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GEO-5r-GTv">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bountyRow" rowHeight="315" id="ECf-Vv-0Ha">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bountyCell" rowHeight="315" id="ECf-Vv-0Ha" customClass="BountyTableViewCell" customModule="Bounty_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="315"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ECf-Vv-0Ha" id="1xC-3Z-Fl8">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="315"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT3-nr-H6T">
+                                            <rect key="frame" x="20" y="11" width="350" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                    <integer key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgf-5s-f3V">
+                                            <rect key="frame" x="20" y="36" width="350" height="268"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                    <integer key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                                    <integer key="value" value="35"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Dgf-5s-f3V" firstAttribute="leading" secondItem="1xC-3Z-Fl8" secondAttribute="leadingMargin" id="2Ra-3z-9Wz"/>
+                                        <constraint firstItem="iT3-nr-H6T" firstAttribute="top" secondItem="1xC-3Z-Fl8" secondAttribute="topMargin" id="Ofz-Fx-m9j"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iT3-nr-H6T" secondAttribute="trailing" id="RDQ-yA-1OT"/>
+                                        <constraint firstItem="Dgf-5s-f3V" firstAttribute="top" secondItem="iT3-nr-H6T" secondAttribute="bottom" constant="8" symbolic="YES" id="fQV-nB-OL9"/>
+                                        <constraint firstItem="Dgf-5s-f3V" firstAttribute="trailing" secondItem="1xC-3Z-Fl8" secondAttribute="trailingMargin" id="jP2-f6-WVl"/>
+                                        <constraint firstItem="Dgf-5s-f3V" firstAttribute="bottom" secondItem="1xC-3Z-Fl8" secondAttribute="bottomMargin" id="lKk-7o-xT2"/>
+                                        <constraint firstItem="iT3-nr-H6T" firstAttribute="leading" secondItem="1xC-3Z-Fl8" secondAttribute="leadingMargin" id="xHV-Db-tRb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentTextView" destination="Dgf-5s-f3V" id="Rlw-Lz-r5C"/>
+                                    <outlet property="titleLabel" destination="iT3-nr-H6T" id="ga8-dM-8Pf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -315,11 +360,63 @@
                             <outlet property="delegate" destination="d0O-sj-rkJ" id="dNV-Eh-PlC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Bounties" id="y3n-PH-BAy"/>
+                    <navigationItem key="navigationItem" title="Bounties" id="y3n-PH-BAy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="QLZ-mX-yqC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="psa-FH-Wfx">
+                                <rect key="frame" x="350.33333333333331" y="11" width="23.666666666666686" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIP-tE-8b6" kind="show" id="UuM-lw-AHv"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddk-eT-xv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3853.8461538461538" y="799.76303317535542"/>
+        </scene>
+        <!--Create a Bounty-->
+        <scene sceneID="LsI-B7-IEr">
+            <objects>
+                <viewController id="GIP-tE-8b6" customClass="BountyFormViewController" customModule="Bounty_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPg-Iu-nhG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BCm-Oa-pll">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pq3-pY-ddu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BCm-Oa-pll" firstAttribute="trailing" secondItem="Pq3-pY-ddu" secondAttribute="trailing" id="2JR-90-wGL"/>
+                            <constraint firstItem="BCm-Oa-pll" firstAttribute="top" secondItem="Pq3-pY-ddu" secondAttribute="top" id="7gP-Rk-kqM"/>
+                            <constraint firstItem="BCm-Oa-pll" firstAttribute="leading" secondItem="Pq3-pY-ddu" secondAttribute="leading" id="Mdg-GF-HYc"/>
+                            <constraint firstItem="BCm-Oa-pll" firstAttribute="bottom" secondItem="Pq3-pY-ddu" secondAttribute="bottom" id="WIi-iN-SRN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a Bounty" id="ag4-kb-1af">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="X5I-Ol-FvP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IhU-7o-aVd">
+                                <rect key="frame" x="288" y="7" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="GIP-tE-8b6" eventType="touchUpInside" id="hAV-I0-tcz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8b-7K-rmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4544.6153846153848" y="799.76303317535542"/>
         </scene>
         <!--Bounties-->
         <scene sceneID="7lA-SK-Zns">
@@ -344,6 +441,7 @@
     <resources>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

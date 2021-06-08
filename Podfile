@@ -12,6 +12,7 @@ target 'Bounty-iOS' do
   pod 'Firebase/Auth'
   pod 'Firebase/Messaging'
   pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
   pod 'Firebase/RemoteConfig'
   # pod 'Firebase/AppCheck' 
 

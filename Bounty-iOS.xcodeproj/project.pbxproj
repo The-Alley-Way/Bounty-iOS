@@ -21,6 +21,10 @@
 		B22E4A802669CCB7009CAE36 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4A7F2669CCB7009CAE36 /* FirebaseManager.swift */; };
 		B259E6B1266D516800F112E7 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = B259E6B0266D516800F112E7 /* Eureka */; };
 		B259E6B3266D51B300F112E7 /* ProfileFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */; };
+		B296C31F266FE874007C2CBA /* Bounty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296C31E266FE874007C2CBA /* Bounty.swift */; };
+		B296C321266FEA83007C2CBA /* BountiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296C320266FEA83007C2CBA /* BountiesTableViewController.swift */; };
+		B296C323266FEAC3007C2CBA /* BountyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296C322266FEAC3007C2CBA /* BountyTableViewCell.swift */; };
+		B296C325266FEC1D007C2CBA /* BountyFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296C324266FEC1D007C2CBA /* BountyFormViewController.swift */; };
 		B2A6501C266A7DEF007664D5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2A6501B266A7DEF007664D5 /* .swiftlint.yml */; };
 		B2B11884266A977E005D7011 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B11883266A977E005D7011 /* ProfileTableViewController.swift */; };
 		B2B11887266ADBE5005D7011 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B2B11886266ADBE5005D7011 /* Kingfisher */; };
@@ -47,6 +51,10 @@
 		B22E4A7E2669C669009CAE36 /* Bounty-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bounty-iOS.entitlements"; sourceTree = "<group>"; };
 		B22E4A7F2669CCB7009CAE36 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFormViewController.swift; sourceTree = "<group>"; };
+		B296C31E266FE874007C2CBA /* Bounty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounty.swift; sourceTree = "<group>"; };
+		B296C320266FEA83007C2CBA /* BountiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountiesTableViewController.swift; sourceTree = "<group>"; };
+		B296C322266FEAC3007C2CBA /* BountyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyTableViewCell.swift; sourceTree = "<group>"; };
+		B296C324266FEC1D007C2CBA /* BountyFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyFormViewController.swift; sourceTree = "<group>"; };
 		B2A6501B266A7DEF007664D5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B2B11883266A977E005D7011 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		B2DA6521266A844B00A122C4 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B20BB99A266C0CE3006251C4 /* Profile.swift */,
+				B296C31E266FE874007C2CBA /* Bounty.swift */,
 				B20BB99C266C0D7B006251C4 /* Project.swift */,
 			);
 			path = Objects;
@@ -141,6 +150,9 @@
 				B22E4A272669A976009CAE36 /* ViewController.swift */,
 				B2B11883266A977E005D7011 /* ProfileTableViewController.swift */,
 				B259E6B2266D51B300F112E7 /* ProfileFormViewController.swift */,
+				B296C320266FEA83007C2CBA /* BountiesTableViewController.swift */,
+				B296C322266FEAC3007C2CBA /* BountyTableViewCell.swift */,
+				B296C324266FEC1D007C2CBA /* BountyFormViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,13 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B296C323266FEAC3007C2CBA /* BountyTableViewCell.swift in Sources */,
 				B2B11884266A977E005D7011 /* ProfileTableViewController.swift in Sources */,
 				B22E4A802669CCB7009CAE36 /* FirebaseManager.swift in Sources */,
+				B296C31F266FE874007C2CBA /* Bounty.swift in Sources */,
 				B259E6B3266D51B300F112E7 /* ProfileFormViewController.swift in Sources */,
 				B22E4A282669A976009CAE36 /* ViewController.swift in Sources */,
 				B20BB99B266C0CE3006251C4 /* Profile.swift in Sources */,
 				B22E4A242669A976009CAE36 /* AppDelegate.swift in Sources */,
+				B296C325266FEC1D007C2CBA /* BountyFormViewController.swift in Sources */,
 				B22E4A262669A976009CAE36 /* SceneDelegate.swift in Sources */,
+				B296C321266FEA83007C2CBA /* BountiesTableViewController.swift in Sources */,
 				B2DA6522266A844B00A122C4 /* AuthenticationService.swift in Sources */,
 				B20BB99D266C0D7B006251C4 /* Project.swift in Sources */,
 			);
