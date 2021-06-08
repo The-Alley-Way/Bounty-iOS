@@ -82,7 +82,6 @@ class ViewController: UIViewController, FUIAuthDelegate {
         print(error ?? "No error signing in")
         
         if let user = user {
-            // Add a new document in collection "cities"
             manager.uploadCurrentProfile(user)
         }
     }

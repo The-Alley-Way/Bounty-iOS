@@ -266,6 +266,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BmD-rE-eCw" kind="relationship" relationship="viewControllers" id="aGB-0S-Sv1"/>
+                        <segue destination="fhg-jr-mZ7" kind="relationship" relationship="viewControllers" id="GXP-zA-LbV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aku-iz-R7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -291,8 +292,57 @@
             </objects>
             <point key="canvasLocation" x="2926.1538461538462" y="128.67298578199052"/>
         </scene>
+        <!--Bounties-->
+        <scene sceneID="eCX-tZ-e0H">
+            <objects>
+                <tableViewController id="d0O-sj-rkJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GEO-5r-GTv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bountyRow" rowHeight="315" id="ECf-Vv-0Ha">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="315"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ECf-Vv-0Ha" id="1xC-3Z-Fl8">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="315"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d0O-sj-rkJ" id="ddu-Qg-Q0i"/>
+                            <outlet property="delegate" destination="d0O-sj-rkJ" id="dNV-Eh-PlC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bounties" id="y3n-PH-BAy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddk-eT-xv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853.8461538461538" y="799.76303317535542"/>
+        </scene>
+        <!--Bounties-->
+        <scene sceneID="7lA-SK-Zns">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fhg-jr-mZ7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bounties" image="list.bullet.rectangle" catalog="system" selectedImage="list.bullet.rectangle" id="HGA-uW-W3i"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yuP-I1-o4h">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d0O-sj-rkJ" kind="relationship" relationship="rootViewController" id="aee-JE-fFS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMw-7J-d0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924.6153846153843" y="800.47393364928905"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

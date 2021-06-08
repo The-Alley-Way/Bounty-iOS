@@ -26,7 +26,7 @@ class FirebaseManager {
     }
     
     func uploadCurrentProfile(_ user: User) {
-        firestore.collection("users").document(user.uid).setData([
+        firestore.collection("users").document(user.uid).updateData([
             "username": user.displayName!,
             "email": user.email!
         ]) { err in
@@ -48,7 +48,7 @@ class FirebaseManager {
             }
         }
         
-        firestore.collection("users").document(profile.uid).setData([
+        firestore.collection("users").document(profile.uid).updateData([
             "pronoun": profile.pronoun!.rawValue,
             "bio": profile.bio
         ]) { err in
