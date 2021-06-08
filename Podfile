@@ -8,12 +8,15 @@ target 'Bounty-iOS' do
   # Pods for Bounty-iOS
   pod 'ImagePicker'
 
+  pod 'Firebase'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Messaging'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
-  pod 'Firebase/RemoteConfig'
+  # pod 'FirebaseRemoteConfig'
+  # pod 'Firebase/MLModelDownloader'
+  pod 'TensorFlowLiteSwift'
   # pod 'Firebase/AppCheck' 
 
   pod 'FirebaseUI/Firestore', '~> 8.0'

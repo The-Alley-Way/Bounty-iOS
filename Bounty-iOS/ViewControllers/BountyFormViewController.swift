@@ -19,6 +19,9 @@ class BountyFormViewController: FormViewController {
     
     private var isValidated: Bool = false
     
+    let tagger = NSLinguisticTagger(tagSchemes:[.language], options: 0)
+    let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .joinNames]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,9 +65,30 @@ class BountyFormViewController: FormViewController {
         rowKeyboardSpacing = 20
     }
     
+    func determineLanguage(for text: String) -> String? {
+        tagger.string = text
+        let language = tagger.dominantLanguage
+        return language
+    }
+    
     @IBAction func savePressed(_ sender: Any) {
         if (isValidated) {
-            upload()
+            let valuesDictionary = form.values()
+            let content = valuesDictionary["content"] as! String
+            
+            if determineLanguage(for: content) != "en" {
+                let alert = UIAlertController(title: "Just a sec!", message: "It seems like your bounty was not written in English. That is completely fine, however, you might miss out on some non-essential features.", preferredStyle: .alert)
+                let uploadAction = UIAlertAction(title: "Upload", style: .default) { action in
+                    self.upload()
+                }
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in }
+                alert.addAction(uploadAction)
+                alert.addAction(cancelAction)
+
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                upload()
+            }
         }
     }
     
